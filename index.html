@@ -51,7 +51,7 @@
 
 	function onSuccess(heading) {//device s magnetic heading is passed to heading variable
 
-		$("#needle").rotate(-heading.magneticHeading); //jquery function that gets the #needle id and rotates it minus the current heading
+		$("#needle").rotate(heading.magneticHeading); //jquery function that gets the #needle id and rotates it minus the current heading
 	}
 
 	function onError(compassError) { //if there is an error the error will be passed to onError in the compassError variable
